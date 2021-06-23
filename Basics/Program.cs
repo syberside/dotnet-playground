@@ -62,6 +62,9 @@ namespace Basics
             Console.WriteLine($"Update onStack (generic): stack={structOnStack.Value} - heap={structOnHeap.Value}");
             DoUpdate<Struct>(structOnStack); // Will pass by stack (no changes) because of Update inside method
             Console.WriteLine($"Update onStack (generic): stack={structOnStack.Value} - heap={structOnHeap.Value}");
+
+            DoUpdateWithInner<IStruct>(structOnStack);
+            DoUpdateWithInner<Struct>(structOnStack);
         }
 
         private static void ModifyReferenceType(Data data)
@@ -132,6 +135,21 @@ namespace Basics
         {
             val.Update();
             Console.WriteLine(val.Value);
+        }
+
+        private static void DoUpdateWithInner<T>(T val) where T : IStruct
+        {
+            Console.WriteLine($"DoUpdateWithInner begin {val.Value}");
+            DoUpdateInner(val); // For IStruct will pass reference here, for Struct will pass value
+            Console.WriteLine($"DoUpdateWithInner end {val.Value}");
+        }
+
+        private static void DoUpdateInner<T>(T val) where T : IStruct
+        {
+            Console.WriteLine($"DoUpdateInner begin {val.Value}");
+            val.Update();
+            Console.WriteLine($"DoUpdateInner end {val.Value}");
+
         }
     }
 }
