@@ -6,7 +6,7 @@ namespace Basics
 {
     public class Structs
     {
-        [Fact, AutoData]
+        [Fact]
         public void PassingByRef_AllowModification()
         {
             var integer = 42;
