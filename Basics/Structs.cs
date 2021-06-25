@@ -104,5 +104,14 @@ namespace Basics
 
             public ref int GetValue() => ref _value;
         }
+
+        private readonly struct FullyReadOnlyStruct
+        {
+            public readonly string Str;
+
+            public readonly string StrProp { get; init; }
+
+            public readonly string GetValue() => Str;
+        }
     }
 }
