@@ -1,10 +1,10 @@
 ﻿namespace ArchSample.Domain.Core
 {
-    public record Email
+    public record Phone
     {
         public string RawValue { get; }
 
-        public Email(string rawValue)
+        public Phone(string rawValue)
         {
             //TODO: check email via regexp
             RawValue = rawValue;

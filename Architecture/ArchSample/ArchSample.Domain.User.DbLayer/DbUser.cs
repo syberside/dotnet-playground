@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ArchSample.Domain.User.DataLayer
 {
@@ -13,5 +14,9 @@ namespace ArchSample.Domain.User.DataLayer
         public DateTime RegistrationDate { get; set; }
 
         public bool IsActive { get; set; }
+
+
+        //NOTE: All aggregate properties (collections, refs) are loaded with entity ALWAYS
+        public ICollection<DbUserPhone> Phones { get; set; }
     }
 }

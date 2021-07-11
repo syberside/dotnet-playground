@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArchSample.Domain.Core;
+using System;
 
 namespace ArchSample.Domain.User.DataLayer
 {
@@ -13,6 +14,12 @@ namespace ArchSample.Domain.User.DataLayer
         public DbUser GetById(Guid id)
         {
             //TODO: add to ORM
+            throw new NotImplementedException();
+        }
+
+        public DbUser GetByPhone(Phone phone)
+        {
+            //TODO: case optimized call (ORM/stored procedure)
             throw new NotImplementedException();
         }
 
