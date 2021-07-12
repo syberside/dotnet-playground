@@ -5,7 +5,7 @@ namespace ArchSample.Domain.User.Impl.IoC
 {
     public static class UserModuleRegistration
     {
-        public static IServiceCollection AddUserModule(IServiceCollection serviceCollection)
+        public static IServiceCollection AddUserModule(this IServiceCollection serviceCollection)
         {
             return serviceCollection
                 .AddTransient<IUserService, UserService>()

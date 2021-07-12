@@ -12,9 +12,10 @@
 	<ItemGroup>
 		<ProjectReference Include="..\ArchSample.Domain.Core\ArchSample.Domain.Core.csproj" />
 		<ProjectReference Include="..\ArchSample.Domain.Notifications\ArchSample.Domain.Notifications.csproj" />
-		<ProjectReference Include="..\ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DbLayer.csproj" />
+		<ProjectReference Include="..\ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DataLayer.csproj" />
 		<ProjectReference Include="..\ArchSample.Domain.User.Impl\ArchSample.Domain.User.Impl.csproj" />
 		<ProjectReference Include="..\ArchSample.Domain.User\ArchSample.Domain.User.csproj" />
+		<ProjectReference Include="..\ArchSample.Infrastructure.DataLayer\ArchSample.Infrastructure.DataLayer.csproj" />
 		<ProjectReference Include="..\ArchSample.UseCases.Infrastructure\ArchSample.UseCases.Infrastructure.csproj" />
 		<ProjectReference Include="..\ArchSample.UseCases.UserManagement\ArchSample.UseCases.UserManagement.csproj" />
 	</ItemGroup>

@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.Domain.User.Impl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.Domain.Notifications", "ArchSample.Domain.Notifications\ArchSample.Domain.Notifications.csproj", "{FC14EB93-A48E-4935-A01E-78E0496FF2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.Domain.User.DbLayer", "ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DbLayer.csproj", "{F8945583-B260-4438-86AE-0AB38518D41C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.Domain.User.DataLayer", "ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DataLayer.csproj", "{F8945583-B260-4438-86AE-0AB38518D41C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.UseCases.UserManagement", "ArchSample.UseCases.UserManagement\ArchSample.UseCases.UserManagement.csproj", "{9D6FCB9C-42E4-47AB-931C-69CAD9DA3A6F}"
 EndProject
@@ -32,6 +32,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C2B59DA3-BD17-45DF-8D1A-924D8813F26C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchSample.Infrastructure.DataLayer", "ArchSample.Infrastructure.DataLayer\ArchSample.Infrastructure.DataLayer.csproj", "{40537552-1BF3-4593-9FAC-FFBE4F852E6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E892B18-BADA-415F-88AC-769F272F4069}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

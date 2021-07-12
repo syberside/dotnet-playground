@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DataLayer.csproj" />
+    <ProjectReference Include="..\ArchSample.UseCases.Infrastructure\ArchSample.UseCases.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

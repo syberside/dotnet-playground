@@ -10,7 +10,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DbLayer.csproj" />
+		<ProjectReference Include="..\ArchSample.Domain.User.DbLayer\ArchSample.Domain.User.DataLayer.csproj" />
 		<ProjectReference Include="..\ArchSample.Domain.User\ArchSample.Domain.User.csproj" />
 	</ItemGroup>
 
